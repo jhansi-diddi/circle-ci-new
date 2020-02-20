@@ -6,7 +6,6 @@ jobs:
     steps:
       - checkout
       - echo "dev"
-      - echo "Hello World"
   test:
     docker:
       - image: circleci/ruby:2.4.1
