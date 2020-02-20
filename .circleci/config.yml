@@ -5,13 +5,13 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - echo "dev"
+      - run: echo "dev"
   test:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - echo "test"
+      - run: echo "test"
 workflows:
   version: 2
   build_and_test:
